@@ -1,7 +1,7 @@
 function displayWeather(input) {
     let degrees = Number(input[0]);
 
-    var type = "";
+    let type = "";
 
     if (degrees >= 26.00 && degrees <= 35.00) {
         type = "Hot";
