@@ -10,6 +10,7 @@ function solve(input) {
     // let text = String.fromCharCode(72, 69, 76, 76, 79);
     let text = "";
     let combinationsFound = 0;
+   
     for (let i = start; i <= end; i++) {
         if (i !== skip) {
 
@@ -20,6 +21,7 @@ function solve(input) {
                         if (k != skip) {
 
                             text += String.fromCharCode(i, j, k) + " ";
+                        
                             combinationsFound++;
                         }
                     }
@@ -27,5 +29,6 @@ function solve(input) {
             }
         }
     }
+    
     console.log(text + combinationsFound);
 }
