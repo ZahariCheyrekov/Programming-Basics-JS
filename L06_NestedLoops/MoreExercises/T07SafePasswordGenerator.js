@@ -23,15 +23,18 @@ function solve(input) {
             }
 
             symbol1++;
+            
             if (symbol1 > 55) {
                 symbol1 = 35;
             }
 
             symbol2++;
+    
             if (symbol2 > 96) {
                 symbol2 = 64;
             }
         }
     }
+    
     console.log(combo);
 }
